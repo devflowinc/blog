@@ -7,6 +7,7 @@
     "astro:dev": "pnpm --filter frontend astro dev",
     "rocket:watch": "cd apps/blog-backend && cargo watch -x run",
     "rocket:build": "cd apps/blog-backend && cargo build",
+    "cargo": "cd apps/blog-backend && cargo",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

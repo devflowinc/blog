@@ -1,17 +1,37 @@
-#[macro_use] extern crate rocket;
+#[macro_use]
+extern crate rocket;
+use sqlx::postgres::PgPoolOptions;
 
-#[get("/")]
-fn index() -> &'static str {
-    "Hello, world!"
+mod handlers;
+mod models;
+
+#[rocket::main]
+async fn main() -> Result<(), rocket::Error> {
+    let pool = PgPoolOptions::new()
+        .connect("postgres://postgres:password@localhost/blog")
+        .await
+        .expect("Failed to build db connection");
+
+    sqlx::migrate!("./migrations")
+        .run(&pool)
+        .await
+        .expect("Failed to apply migrations");
+
+    let _rocket = rocket::build()
+        .manage(pool)
+        .mount(
+            "/api/",
+            routes![handlers::index::index, handlers::index::hello],
+        )
+        .mount(
+            "/api/feature",
+            routes![
+                handlers::feature_request_handler::get_all,
+                handlers::feature_request_handler::create
+            ],
+        )
+        .launch()
+        .await?;
+
+    Ok(())
 }
-
-#[get("/hello/<name>")]
-fn hello(name: &str) -> String {
-    format!("Hello, {}!", name)
-}
-
-#[launch]
-fn rocket() -> _ {
-    rocket::build().mount("/", routes![index, hello])
-}
-
