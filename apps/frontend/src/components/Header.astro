@@ -7,7 +7,7 @@ import logoPNG from "/assets/logo.png";
 import logoSVG from "/assets/logo.svg";
 
 export interface Props {
-  activeNav?: "posts" | "tags" | "about" | "search";
+  activeNav?: "posts" | "tags" | "search";
 }
 
 const { activeNav } = Astro.props;
@@ -69,8 +69,13 @@ const { activeNav } = Astro.props;
             </a>
           </li>
           <li>
-            <a href="/about" class={activeNav === "about" ? "active" : ""}>
-              About
+            <a href="https://arguflow.com/">
+              AI Debate Coach
+            </a>
+          </li>
+          <li>
+            <a href="https://arguflow.gg/">
+              Live Debate
             </a>
           </li>
           <li>
