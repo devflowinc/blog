@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "astro:dev": "pnpm --filter frontend astro dev",
+    "astro:dev": "yarn --filter frontend astro dev",
     "rocket:watch": "cd apps/blog-backend && cargo watch -x run",
     "rocket:build": "cd apps/blog-backend && cargo build",
     "test": "echo \"Error: no test specified\" && exit 1"

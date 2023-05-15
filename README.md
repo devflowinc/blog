@@ -5,13 +5,13 @@
 ### Install frontend dependcies
 
 ```sh
-pnpm --filter frontend install
+yarn --filter frontend install
 ```
 
 ### Ensure backend compiles
 
 ```sh
-pnpm cargo:build
+yarn cargo:build
 ```
 
 ## Running 
@@ -19,11 +19,11 @@ pnpm cargo:build
 ### Run the frontend 
 
 ```sh
-pnpm astro:dev
+yarn astro:dev
 ```
 
 ### Run the backend
 
 ```sh
-pnpm rocket:run
+yarn rocket:run
 ```
