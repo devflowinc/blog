@@ -1,8 +1,8 @@
 ---
 title: Streaming ChatGPT Messages with OpenAI API and Actix Web
 author: fastfist @ arguflow
-pubDatetime: 2023-05-16
-postSlug: streaming-chatgpt-data-with-openai-api-and-actix-web
+pubDatetime: 2023-05-15T10:00:00Z
+postSlug: streaming-chatgpt-messages-with-openai-api-and-actix-web
 featured: true
 draft: false
 tags:
@@ -10,11 +10,13 @@ tags:
   - actix-web
   - chat-gpt
   - open-ai
-ogImage: https://res.cloudinary.com/noezectz/v1663745737/astro-paper/astropaper-x-forestry-og_kqfwp0.png
+ogImage: /assets/Arguflow_Opengraph.png
 description:
-  Step by step process of connecting Astro-Paper blog theme with Forestry
-  Headless CMS.
+  Guide on how we were able to stream ChatGPT messages in real time using Actix Web.
+  
 ---
+
+![](/assets/Arguflow_Opengraph.png)
 
 When choosing to decide what software to build [Arguflow AI](https://arguflow.com) with we were tired of using Javascript for our backend services. We wanted something better, something faster, something safer, something rusty. Our main motivation behind choosing to use rust was for the learning experience behind it.
 
