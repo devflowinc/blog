@@ -8,7 +8,8 @@ draft: false
 tags:
   - rust
   - actix-web
-  - astro-paper
+  - chat-gpt
+  - open-ai
 ogImage: https://res.cloudinary.com/noezectz/v1663745737/astro-paper/astropaper-x-forestry-og_kqfwp0.png
 description:
   Step by step process of connecting Astro-Paper blog theme with Forestry
@@ -19,12 +20,12 @@ When choosing to decide what software to build [Arguflow AI](https://arguflow.co
 
 # Why Actix
 
-When looking at what framework to use we had to choices actix_web or rocket. We chose to use actix and actix_web because we heard that it was one of the fastest options 
+When looking at what framework to use we had two choices actix_web or rocket. We chose to use actix and actix_web because we heard that it was faster than rocket from benchmarks.
 
 #  Our Naive Solution
 ## Streaming data with Actix
 
-The first thing we saw on how to stream data in actix_web was was using tokios builtin [`mpsc_channels`](https://docs.rs/tokio/latest/tokio/sync/mpsc/fn.channel.html#). 
+The first thing we saw on how to stream data in actix_web was was using tokio's built-in [`mpsc_channels`](https://docs.rs/tokio/latest/tokio/sync/mpsc/fn.channel.html#). 
 
 ```rs
 pub type StreamItem = Result<Bytes, actix_web::Error>;
@@ -149,7 +150,7 @@ all will block the main thread from returning until it has fully resolved.
 This lead us down a rabbit hole of trying to put this while loop in a different
 process. This proved difficult because we wanted to spawn an asynchronous
 function on a separate thread, while Actix is much better suited for spawning
-synchrnous functions on separate threads.
+synchronous functions on separate threads.
 
 This had other larger issues because `mpsc::channel` channels don't implement
 the `Send` trait that is vital for it to be sent across threads and quite
@@ -208,7 +209,7 @@ We need to both process data while sending it to the client. So ... we went back
 
 ## Actix Arbiter 
 
-In order for this to truly work how we need it to, we need to bring in another actix primitive, [`Arbiters](https://actix.rs/docs/actix/arbiter/). Arbiters spawn a process on a different thread, on this separate thread we 
+In order for this to truly work how we want, we need to bring in another actix primitive, [`Arbiters](https://actix.rs/docs/actix/arbiter/). Arbiters spawn a process on a different thread, on this separate thread we 
 will need to get the completion messages via a channel and write to the database once the full response is received.
 
 ```rs
