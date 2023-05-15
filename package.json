@@ -11,8 +11,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "workspaces": [
-    "./apps/**"
-  ]
+  "license": "ISC"
 }
