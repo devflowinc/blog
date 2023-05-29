@@ -5,7 +5,7 @@ export const SITE: Site = {
   author: "Arguflow Core Team",
   desc: "A blog about Arguflow, a new way for teams to collaborate on complex ideas.",
   title: "Arguflow",
-  ogImage: "arguflow-og.jpg",
+  ogImage: "arguflow-og.png",
   lightAndDarkMode: true,
   postPerPage: 3,
 };
