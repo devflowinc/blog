@@ -1,5 +1,5 @@
 ---
-title: Top 10 Most Cited Evidence Cards
+title: Top 10 Most Cited Evidence Cards From OpenCaselist
 author: denssumesh @ arguflow
 pubDatetime: 2023-08-04T10:00:00Z
 postSlug: Top 10 cards that have been cited the most frequently from the OpenCaselist wiki
