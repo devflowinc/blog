@@ -40,7 +40,7 @@ export const SOCIALS: SocialObjects = [
   },
   {
     name: "Twitter",
-    href: "https://twitter.com/arguflowai",
+    href: "https://twitter.com/arguflow",
     linkTitle: `${SITE.title} on Twitter`,
     active: true,
   },
