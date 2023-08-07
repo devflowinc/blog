@@ -1,8 +1,8 @@
 ---
-title: Top 10 Collided Cards
+title: Top 10 Most Cited Evidence Cards
 author: denssumesh @ arguflow
 pubDatetime: 2023-08-04T10:00:00Z
-postSlug: Top 10 cards that have the most collisions
+postSlug: Top 10 cards that have been cited the most frequently from the OpenCaselist wiki
 featured: true
 draft: false
 tags:
@@ -10,13 +10,12 @@ tags:
   - embeddings
 ogImage: /assets/Arguflow_Opengraph.png
 description:
-  See the top 10 cards that have the most collisions
+  See the top 10 cards that have been referenced the most by the case briefs uploaded to Vault
 
 ---
 
-These are the top 10 cards that were referenced the most by the debate cases
-uploaded to Vault. These cards represent important topics that were widely
-discussed in the debate community. Each of these cards are from different cases
+These are the top 10 cards that were referenced the most by debate cases
+uploaded to [Arguflow Vault](https::/vault.arguflow.ai/) (all of the OpenCaselist wiki). Each of these cards are from different cases
 and most likely have different cuts, or excerpts, from the original article.
 
 ## Number 10:
