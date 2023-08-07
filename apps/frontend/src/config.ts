@@ -1,7 +1,7 @@
 import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
-  website: "https://blog.arguflow.com/",
+  website: "https://blog.arguflow.ai/",
   author: "Arguflow Core Team",
   desc: "A blog about Arguflow, a new way for teams to collaborate on complex ideas.",
   title: "Arguflow",

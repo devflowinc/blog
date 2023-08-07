@@ -23,15 +23,15 @@ description:
 
 If you don't know what an "embedding" is, then I strongly reccomend reading this [informational article](https://towardsdatascience.com/what-is-embedding-and-what-can-you-do-with-it-61ba7c05efd8) from towardsdatascience before going much further. 
 
-In technical terms, [Vault](https://vault.arguflow.com/) is a website that allows users to create and search embeddings. Keep reading for a more complete explanation.
+In technical terms, [Vault](https://vault.arguflow.ai/) is a website that allows users to create and search embeddings. Keep reading for a more complete explanation.
 
-### Primary Goals For [Vault](https://vault.arguflow.com/)
+### Primary Goals For [Vault](https://vault.arguflow.ai/)
 
 #### Provide those in the academic debate community a way to save and query their evidence and also demonstrate their research abilities to the outside world
 
 There are a number of open-evidence projects for the debate community, however they are oriented around sharing large briefs in the form of a docx or pdf file. Those briefs are significantly **more** than just evidence. They contain argument contentions, cut cards, definitions, values, and several other things. 
 
-While they are really great starting points for competitors building their case, we believe they have key issues that [Vault](https://vault.arguflow.com/) may be able to fix:
+While they are really great starting points for competitors building their case, we believe they have key issues that [Vault](https://vault.arguflow.ai/) may be able to fix:
 
 - due to their nature as pdf/docx files, they are difficult to supplement or edit and re-share
 - the evidence cards contained within the briefs are difficult to query as the best option is usually a ctrl+f matching search 
@@ -39,20 +39,20 @@ While they are really great starting points for competitors building their case,
 - they don't build on each-other, you can only ctrl+f in one brief at any given time
 - debaters don't have incentive to contribute; their efforts creating and sharing briefs are near-impossible to convey to the outside world
 
-To be clear, [Vault](https://vault.arguflow.com/) will likely not be a replacement for briefs. We do not intend to expand [Vault](https://vault.arguflow.com/) to be more than an evidence store. Therefore, briefs will still be needed to provide contentions, definitions, values, framing, etc. We intend for [Vault](https://vault.arguflow.com/) to help those who build briefs and cases, not replace them. 
+To be clear, [Vault](https://vault.arguflow.ai/) will likely not be a replacement for briefs. We do not intend to expand [Vault](https://vault.arguflow.ai/) to be more than an evidence store. Therefore, briefs will still be needed to provide contentions, definitions, values, framing, etc. We intend for [Vault](https://vault.arguflow.ai/) to help those who build briefs and cases, not replace them. 
 
-One of the interesting features that could be coming up for [Vault](https://vault.arguflow.com/) is integration with something like [CXB8](https://github.com/debate/CX_DB8) such that search results will be shown as cut cards instead of just plain-text. 
+One of the interesting features that could be coming up for [Vault](https://vault.arguflow.ai/) is integration with something like [CXB8](https://github.com/debate/CX_DB8) such that search results will be shown as cut cards instead of just plain-text. 
 
-#### Supplement [Arguflow AI Coach](https://arguflow.com/) to include evidence from [Vault](https://vault.arguflow.com/) in its feedback and counter-arguments 
+#### Supplement [Arguflow AI Coach](https://coach.arguflow.ai/) to include evidence from [Vault](https://vault.arguflow.ai/) in its feedback and counter-arguments 
 
 Understanding this section will require that you are familiar with the concept of llm-chain'ing. If that is not a term you are familiar with, [this article](https://cobusgreyling.substack.com/p/chaining-large-language-model-llm) is a great primer. 
 
-If the evidence within Vault grows large enough and there enough users upvoting/downvoting the evidence present, we think that we will be able to drastically improve the quality of [AI Coach](https://arguflow.com/) by executing the following chain: 
+If the evidence within Vault grows large enough and there enough users upvoting/downvoting the evidence present, we think that we will be able to drastically improve the quality of [AI Coach](https://coach.arguflow.ai/) by executing the following chain: 
 
-1. User provides their argument to [AI Coach](https://arguflow.com/)
-2. A vector search is performed on [Vault](https://vault.arguflow.com/)'s data and the top few results based on a combination of user-rating and vector-similarity are saved
-3. The user's argument along with the top results from [Vault](https://vault.arguflow.com/) are fed as a prompt to a chat model that generates feedback and a counterargument
-4. The generated feedback and counteragument are returned to the user alongwith a list of the top results from [Vault](https://vault.arguflow.com/)
+1. User provides their argument to [AI Coach](https://coach.arguflow.ai/)
+2. A vector search is performed on [Vault](https://vault.arguflow.ai/)'s data and the top few results based on a combination of user-rating and vector-similarity are saved
+3. The user's argument along with the top results from [Vault](https://vault.arguflow.ai/) are fed as a prompt to a chat model that generates feedback and a counterargument
+4. The generated feedback and counteragument are returned to the user alongwith a list of the top results from [Vault](https://vault.arguflow.ai/)
 
 ### Moonshot Goal
 
@@ -64,7 +64,7 @@ There are lots of folks who are creating embeddings from arxiv papers, news arti
 - vector-similarity in and of itself is not the end-all be-all to search, there is a lot of value in creating an algorithm that weights vector similarity, backlinks, user-rating, and several other factors 
 
 
-[Vault](https://vault.arguflow.com/) is a ways away from being the go-to semantic search-engine, but the blockers aren't feature related. The technical requirements are relatively simple: 
+[Vault](https://vault.arguflow.ai/) is a ways away from being the go-to semantic search-engine, but the blockers aren't feature related. The technical requirements are relatively simple: 
 
 1. Ingest a greater number of embeddings from those who are creating huge embedding stores 
 2. Create a more complex search algorithm that combines vector-similarity, with other factors 
@@ -76,9 +76,9 @@ The complicated parts that we are far less confident in our ability to deliver a
 
 ## The Future
 
-We are not sure that we are going to continue developing software for Arguflow at all. We will likely be leaving [AI Coach](https://arguflow.com/) and [Vault](https://vault.arguflow.com/) mostly alone until the academic debate season starts back up again during the upcoming '23/'24 school-year. 
+We are not sure that we are going to continue developing software for Arguflow at all. We will likely be leaving [AI Coach](https://coach.arguflow.ai/) and [Vault](https://vault.arguflow.ai/) mostly alone until the academic debate season starts back up again during the upcoming '23/'24 school-year. 
 
-Some key features we may add in the near-term are voice-to-text for [AI Coach](https://arguflow.com/) and integration with a card-cutting model like [CXB8](https://github.com/debate/CX_DB8), but we lack plans beyond that for the next few months and don't even gaurantee that we will ship those.
+Some key features we may add in the near-term are voice-to-text for [AI Coach](https://coach.arguflow.ai/) and integration with a card-cutting model like [CXB8](https://github.com/debate/CX_DB8), but we lack plans beyond that for the next few months and don't even gaurantee that we will ship those.
 
 In the meantime, we are hoping to get accepted into [Futo's fellow program](https://futo.org/fellows/) where we would begin building enterprise software for business teams to have better and more docuementable debates and constructive dialogue. 
 

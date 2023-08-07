@@ -18,7 +18,7 @@ description:
 
 ![](/assets/Arguflow_Opengraph.png)
 
-When choosing to decide what software to build [Arguflow AI](https://arguflow.com) with we were tired of using Javascript for our backend services. We wanted something better, something faster, something safer, something rusty. Our main motivation behind choosing to use rust was for the learning experience behind it.
+When choosing to decide what software to build [Arguflow AI](https://coach.arguflow.ai) with we were tired of using Javascript for our backend services. We wanted something better, something faster, something safer, something rusty. Our main motivation behind choosing to use rust was for the learning experience behind it.
 
 # Why Actix
 
