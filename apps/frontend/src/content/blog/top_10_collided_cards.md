@@ -22,7 +22,7 @@ and most likely have different cuts, or excerpts, from the original article.
 
 ### Russian Cyberattacks can not take out the US grid (Collided 752 times)
 
-#### https://vault.arguflow.ai/card/804d93d4-1aa4-470c-9133-24bbc08d6b66
+#### [vault.arguflow.ai/card/804d93d4...](https://vault.arguflow.ai/card/804d93d4-1aa4-470c-9133-24bbc08d6b66)
 
 Especially with these past couple of years with Russia's aggression in Ukraine,
 their cyber capability has come to the forefront of discussion in politics as
@@ -37,7 +37,7 @@ the US.
 
 ### Biodiversity loss is an existential threat (Collided 782 times)
 
-#### https://vault.arguflow.ai/card/bf915b40-52b9-4ef9-a46a-b45ae0b34895
+#### [vault.arguflow.ai/card/bf915b405](https://vault.arguflow.ai/card/bf915b40-52b9-4ef9-a46a-b45ae0b34895)
 
 Biodiversity loss is a distinct threat. This loss results from factors like
 ecosystem fragmentation, pollution, overfishing, and overpopulation. The 2015
@@ -53,7 +53,7 @@ their case is important.
 
 ### Capitalism is a failed system that will lead to our extinction (Collided 810 times)
 
-#### https://vault.arguflow.ai/card/e0a13ff8-801b-4038-af95-97560164944d
+#### [vault.arguflow.ai/card/e0a13ff8](https://vault.arguflow.ai/card/e0a13ff8-801b-4038-af95-97560164944d)
 
 In the early 21st century, capitalism is evident to have failed as a social
 system. Liberal democracy is collapsing, while fascism, patriarchy, racism,
@@ -67,7 +67,7 @@ that we live in and how they are inherently flawed.
 
 ### A definition of the phrase "in the area" (Collided 831 times)
 
-#### https://vault.arguflow.ai/card/19bbcd23-bab5-41d5-a206-f3ed0dc6f395
+#### [vault.arguflow.ai/card/19bbcd23](https://vault.arguflow.ai/card/19bbcd23-bab5-41d5-a206-f3ed0dc6f395)
 
 This card is from the UN and it describes how the phrase "in the area" is
 defined. Specifically, in the area refers to all activities of the area. This
@@ -78,7 +78,7 @@ out how the other team's case is misrepresenting the topic.
 
 ### A US-China war over Taiwan will go nuclear (Collided 1083 times)
 
-#### https://vault.arguflow.ai/card/68212cee-3710-4d69-881a-84a6007954fc
+#### [vault.arguflow.ai/card/68212cee](https://vault.arguflow.ai/card/68212cee-3710-4d69-881a-84a6007954fc)
 
 The possibility of a nuclear war between China and the United States in the
 context of a conflict over Taiwan is a growing concern. China's military
@@ -96,7 +96,7 @@ to show the judge why their case is important and why they should vote for them.
 
 ### Definition of Open Borders (Collided 1088 times)
 
-#### https://vault.arguflow.ai/card/98266602-7664-4950-969f-b624a9e942fb
+#### [vault.arguflow.ai/card/98266602](https://vault.arguflow.ai/card/98266602-7664-4950-969f-b624a9e942fb)
 
 This card defines what open borders are. It states that open borders are the
 absence of restrictions on the movement of goods and people across borders. This
@@ -107,7 +107,7 @@ out how the other team's case is misrepresenting the topic.
 
 ### Existential Threats are the most important impact (Collided 1155 times)
 
-#### https://vault.arguflow.ai/card/6ae49a91-61b8-4551-bff2-6e228e6a76bd
+#### [vault.arguflow.ai/card/6ae49a91](https://vault.arguflow.ai/card/6ae49a91-61b8-4551-bff2-6e228e6a76bd)
 
 The author argues that despite the various disagreements in moral philosophy,
 there is a fundamental point of agreement that reducing the risk of global
@@ -122,7 +122,7 @@ impacts in front of the judge.
 
 ### Definition of Utilitarianism (Collided 1160 times)
 
-#### https://vault.arguflow.ai/card/1f6ef98a-3a8a-4dbc-b411-5d145c78639c
+#### [vault.arguflow.ai/card/1f6ef98a](https://vault.arguflow.ai/card/1f6ef98a-3a8a-4dbc-b411-5d145c78639c)
 
 Utilitarianism is "deep pragmatism." Utilitarianism focuses on impartiality and
 values the conscious experience's quality. It offers a common metric to resolve
@@ -137,7 +137,7 @@ impacts in the debate round.
 
 ### Infectious diseases are an existential threat (Collided 1502 times)
 
-#### https://vault.arguflow.ai/card/08302129-fdb9-4014-a2b4-4deb42cfdf9c
+#### [vault.arguflow.ai/card/08302129](https://vault.arguflow.ai/card/08302129-fdb9-4014-a2b4-4deb42cfdf9c)
 
 The COVID-19 pandemic highlights the need to prepare for future, potentially
 worse pandemics. Scientific evidence suggests that the human gut harbors viruses
@@ -152,7 +152,7 @@ judge that solving the issues of their case is important.
 
 ### Pleasure and reward systems control our actions (Collided 2492 times)
 
-#### https://vault.arguflow.ai/card/1ece3a08-c423-47b9-89fa-f9e155222785
+#### [vault.arguflow.ai/card/1ece3a08](https://vault.arguflow.ai/card/1ece3a08-c423-47b9-89fa-f9e155222785)
 
 The role of pleasure in reward systems is complex and vital. Pleasure, a primary
 effect of rewards, drives learning, approach behavior, and decision-making. It
