@@ -9,13 +9,11 @@ tags:
   - vault
   - embeddings
 ogImage: /assets/Arguflow_Opengraph.png
-description:
-  See the top 10 cards that have been referenced the most by the case briefs uploaded to Vault
-
+description: See the top 10 cards that have been referenced the most by the case briefs uploaded to Vault
 ---
 
 These are the top 10 cards that were referenced the most by debate cases
-uploaded to [Arguflow Vault](https::/vault.arguflow.ai/) (all of the OpenCaselist wiki). Each of these cards are from different cases
+uploaded to [Arguflow Vault](https://vault.arguflow.ai/) (all of the OpenCaselist wiki). Each of these cards are from different cases
 and most likely have different cuts, or excerpts, from the original article.
 
 ## Number 10:
