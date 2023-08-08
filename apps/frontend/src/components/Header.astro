@@ -11,6 +11,18 @@ const { activeNav } = Astro.props;
 ---
 
 <header>
+  <div
+    class="card py-3 font-semibold"
+    style="margin: 0px; position: relative; width: 100%; color: blue; background-color: yellow; justify-content: center; text-align: center; font-size: 20px; flex: 1 1 0%; background-image: linear-gradient(59deg, rgb(163, 62, 181) 0%, rgb(0, 221, 231) 100%);"
+  >
+    <div style="color: white;">
+      Check out <a
+        class="font-bold underline"
+        href="https://vault.arguflow.ai"
+        style="color: rgb(211, 255, 25);">Vault</a
+      >, Arguflow's new debate search platform
+    </div>
+  </div>
   <a id="skip-to-content" href="#main-content">Skip to content</a>
   <div class="nav-container">
     <div class="top-nav-wrap min-h-[50px]">
@@ -66,10 +78,15 @@ const { activeNav } = Astro.props;
             </a>
           </li>
           <li>
-            <a href="https://coach.arguflow.ai/"> AI Coach</a>
+            <a
+              class="font-extrabold underline"
+              href="https://vault.arguflow.ai/"
+            >
+              Vault</a
+            >
           </li>
           <li>
-            <a href="https://vault.arguflow.ai/"> Vault</a>
+            <a href="https://coach.arguflow.ai/"> AI Coach</a>
           </li>
           <li>
             <a href="https://docs.arguflow.gg/"> Live Debate</a>
@@ -121,7 +138,7 @@ const { activeNav } = Astro.props;
 
 <style>
   #skip-to-content {
-    @apply bg-skin-accent text-skin-inverted absolute -top-full left-16 z-50 px-3 py-2 transition-all focus:top-4;
+    @apply absolute -top-full left-16 z-50 bg-skin-accent px-3 py-2 text-skin-inverted transition-all focus:top-4;
   }
   .nav-container {
     @apply mx-auto flex max-w-3xl flex-col items-center justify-between sm:flex-row;
@@ -136,11 +153,11 @@ const { activeNav } = Astro.props;
     @apply self-end p-2 sm:hidden;
   }
   .hamburger-menu svg {
-    @apply fill-skin-base h-6 w-6 scale-125;
+    @apply h-6 w-6 scale-125 fill-skin-base;
   }
 
   nav {
-    @apply bg-skin-fill flex w-full flex-col items-center sm:ml-2 sm:flex-row sm:justify-end sm:space-x-4 sm:py-0;
+    @apply flex w-full flex-col items-center bg-skin-fill sm:ml-2 sm:flex-row sm:justify-end sm:space-x-4 sm:py-0;
   }
   nav ul {
     @apply mt-4 grid w-44 grid-cols-2 grid-rows-4 gap-x-2 gap-y-2 sm:ml-0 sm:mt-0 sm:w-auto sm:gap-x-5 sm:gap-y-0;
@@ -149,7 +166,7 @@ const { activeNav } = Astro.props;
     @apply col-span-2 flex items-center justify-center;
   }
   nav ul li a {
-    @apply hover:text-skin-accent w-full px-4 py-3 text-center font-medium sm:my-0 sm:px-2 sm:py-1;
+    @apply w-full px-4 py-3 text-center font-medium hover:text-skin-accent sm:my-0 sm:px-2 sm:py-1;
   }
   nav ul li:nth-child(4) a {
     @apply w-auto;
@@ -169,7 +186,7 @@ const { activeNav } = Astro.props;
     @apply p-1;
   }
   nav button svg {
-    @apply fill-skin-base hover:fill-skin-accent h-6 w-6;
+    @apply h-6 w-6 fill-skin-base hover:fill-skin-accent;
   }
   #theme-btn {
     @apply p-3 sm:p-1;

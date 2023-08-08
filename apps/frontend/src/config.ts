@@ -4,13 +4,13 @@ export const SITE: Site = {
   website: "https://blog.arguflow.ai/",
   author: "Arguflow Core Team",
   desc: "A blog about Arguflow, a new way for teams to collaborate on complex ideas.",
-  title: "Arguflow",
+  title: "Arguflow Blog",
   ogImage: "arguflow-og.png",
   lightAndDarkMode: true,
-  postPerPage: 3,
+  postPerPage: 5,
 };
 
-export const LOCALE = ["en-EN"]; // set to [] to use the environment default
+export const LOCALE = ["en-EN"];
 
 export const LOGO_IMAGE = {
   enable: false,
@@ -22,7 +22,7 @@ export const LOGO_IMAGE = {
 export const SOCIALS: SocialObjects = [
   {
     name: "Github",
-    href: "https://github.com/orgs/arguflow/repositories",
+    href: "https://github.com/orgs/arguflow",
     linkTitle: ` ${SITE.title} on Github`,
     active: true,
   },
