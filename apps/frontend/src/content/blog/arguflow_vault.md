@@ -15,7 +15,6 @@ tags:
 ogImage: /assets/Arguflow_Opengraph.png
 description:
   Learn about what Arguflow Vault is and our planned direction for it
-
 ---
 
 

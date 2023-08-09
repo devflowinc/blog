@@ -21,17 +21,35 @@ export const LOGO_IMAGE = {
 
 export const SOCIALS: SocialObjects = [
   {
+    name: "Discord",
+    href: "https://discord.gg/CuJVfgZf54",
+    linkTitle: `${SITE.title} on Discord`,
+    active: true,
+  },
+  {
     name: "Github",
     href: "https://github.com/orgs/arguflow",
     linkTitle: ` ${SITE.title} on Github`,
     active: true,
   },
   {
-    name: "Instagram",
-    href: "https://instagram.com/arguflow",
-    linkTitle: `${SITE.title} on Instagram`,
+    name: "Telegram",
+    href: "https://t.me/+vUOq6omKOn5lY2Zh",
+    linkTitle: `${SITE.title} on Telegram`,
     active: true,
   },
+  {
+    name: "Matrix",
+    href: "https://matrix.to/#/#arguflow-general:matrix.zerodao.gg",
+    linkTitle: `${SITE.title} on Matrix`,
+    active: true,
+  },
+  // {
+  //   name: "Instagram",
+  //   href: "https://instagram.com/arguflow",
+  //   linkTitle: `${SITE.title} on Instagram`,
+  //   active: true,
+  // },
   {
     name: "Mail",
     href: "contact@arguflow.gg",
@@ -44,16 +62,16 @@ export const SOCIALS: SocialObjects = [
     linkTitle: `${SITE.title} on Twitter`,
     active: true,
   },
-  {
-    name: "Twitch",
-    href: "https://twitch.tv/arguflow",
-    linkTitle: `${SITE.title} on Twitch`,
-    active: true,
-  },
-  {
-    name: "YouTube",
-    href: "https://youtube.com/@arguflow",
-    linkTitle: `${SITE.title} on YouTube`,
-    active: true,
-  },
+  // {
+  //   name: "Twitch",
+  //   href: "https://twitch.tv/arguflow",
+  //   linkTitle: `${SITE.title} on Twitch`,
+  //   active: true,
+  // },
+  // {
+  //   name: "YouTube",
+  //   href: "https://youtube.com/@arguflow",
+  //   linkTitle: `${SITE.title} on YouTube`,
+  //   active: true,
+  // },
 ];
