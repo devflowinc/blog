@@ -44,7 +44,7 @@ Ce Gao from modelz explained it quite well in his [Do we really need a specializ
 
 > Imagine if your data is already stored in an OLTP database such as PostgreSQL. To perform vector search using an independent vector database, you need to first extract the data from the database, then convert each data point into a vector using services such as OpenAI Embedding, and then synchronize it to a dedicated vector database. This adds a lot of complexity. Furthermore, if a user deletes a data point in PostgreSQL but it is not deleted in the vector database, then there will be data inconsistency issues. This issue can be very serious in actual production environments.
 
-[Qdrant](https://qdrant.tech/), like [ElasticSearch](https://www.elastic.co/), is built on top of [lucene](https://lucene.apache.org/). Hence, it's prudent to employ analogous principles for data storage in Qdrant as you would for Elastic. Maddie Jones from [Bonsai](https://bonsai.io) offers a detailed look at the case for ElasticSearch storage in her [Why Elasticsearch should not be your Primary Data Store](https://bonsai.io/blog/why-elasticsearch-should-not-be-your-primary-data-store) article. I would strongly recommend giving it a read.
+[Qdrant](https://qdrant.tech/), like [ElasticSearch](https://www.elastic.co/), is not [ACID](https://docs.digitalocean.com/glossary/acid/) compliant. Hence, it's prudent to employ analogous principles for data storage in Qdrant as you would for Elastic. Maddie Jones from [Bonsai](https://bonsai.io) offers a detailed look at the case for ElasticSearch storage in her [Why Elasticsearch should not be your Primary Data Store](https://bonsai.io/blog/why-elasticsearch-should-not-be-your-primary-data-store) article. I would strongly recommend giving it a read.
 
 > Elasticsearch focuses on making data available in “near real-time.” In order to do that, it requires making engineering choices focused on speed rather than perfectly reliable results. This means there are a number of tradeoffs under the hood where consistency is sacrificed for expediency. Inconsistent and partial results are much more of a possibility with Elasticsearch than with a database.
 
@@ -100,4 +100,4 @@ ClickHouse 100 std shift: 33.21907735022152
 
 ## Conclusion
 
-Due to the extremely low precision, it is not viable to replace Qdrant with Clickhouse at this time. Going forward, we will continue to excercise caution and refrain from fully committing to any particular data store solution.
+Due to the extremely low precision, it is not viable to replace Qdrant with Clickhouse at this time. Going forward, we will continue to exercise caution and refrain from fully committing to any particular data store solution.
