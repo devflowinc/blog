@@ -28,7 +28,7 @@ description: In-depth examination of whether or not Clickhouse would be able to 
 
 The key takeaway here is that we are strategically developing our systems to facilitate painless replacement of the underlying vector store. Anticipating the uncertain trajectory of vector store solutions, we are exercising caution and refraining from fully committing to any particular data store solution at this point.
 
-For now, we will stick to [Qdrant](https://qdrant.tech/) for our competitive debate demos as [Clickhouse](https://clickhouse.com/)'s [annoy index](https://clickhouse.com/docs/en/engines/table-engines/mergetree-family/annindexes) is too imprecise to be viable and their [usearch index](https://clickhouse.com/docs/en/engines/table-engines/mergetree-family/annindexes#usearch), powered by [unum](https://www.unum.cloud/) is both too slow and imprecise to be viable.
+For now, we will stick to [Qdrant](https://qdrant.tech/) for our competitive debate demos as [Clickhouse](https://clickhouse.com/)'s [annoy index](https://clickhouse.com/docs/en/engines/table-engines/mergetree-family/annindexes) is too imprecise to be viable and their [HNSW usearch index](https://clickhouse.com/docs/en/engines/table-engines/mergetree-family/annindexes#usearch), powered by [unum](https://www.unum.cloud/) is both too slow and imprecise to be viable.
 
 However, it is important to note that Clickhouse's annoy index solution wins out on pure speed and can be the right choice for datasets characterized by substantial sparsity or considerable size. We may use Clickhouse for future customer deployments when it makes sense to do so.
 
@@ -127,15 +127,15 @@ ClickHouse 100 min shift: 0
 ClickHouse 100 std shift: 33.21907735022152
 ```
 
-### Part 2 - usearch index
+### Part 2 - HNSW usearch index
 
 #### Speed
 
-**TLDR**: Clickhouse/unum's usearch index is slower than no index at all granularities and no-index is 2x slower than Qdrant
+**TLDR**: Clickhouse/unum's HNSW usearch index is slower than no index at all granularities and no-index is 2x slower than Qdrant
 
 The following graph shows speed results when using Qdrant in "exact" mode. 
 
-![Clickhouse/Unum usearch vs. Qdrant speed graph](/assets/usearch-clickhouse-vs-qdrant-speed.png)
+![Clickhouse/Unum HNSW usearch vs. Qdrant speed graph](/assets/usearch-clickhouse-vs-qdrant-speed.png)
 
 Raw numbers: 
 
@@ -159,7 +159,7 @@ ClickHouse 100 min search time: 0.5392437219852582s
 
 #### Accuracy
 
-**TLDR** Clickhouse/Unum's usearch index is also **far** less accurate than Qdrant. 
+**TLDR** Clickhouse/Unum's HNSW usearch index is also **far** less accurate than Qdrant. 
 
 We used the same technique for the `usearch` index as we did for the `annoy` index. 
 
