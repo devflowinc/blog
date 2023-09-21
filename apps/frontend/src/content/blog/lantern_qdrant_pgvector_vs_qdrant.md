@@ -29,6 +29,8 @@ Both [pgvector](https://github.com/pgvector/pgvector) and [lanterndb](https://la
 
 If you are not already using postgres and do not have requirements for an ACID compliant solution, then we would still recommend [Qdrant](https://qdrant.tech/). It has a lot of convience features, supports quantization, and does not require tuning to be accurate. 
 
+Check out [this notebook](https://github.com/arguflow/qdrant-svd-vs-lantern-vs-pgvector) to replicate our results. 
+
 ### Speed Comparisons
 
 ![pgsolutions vs qdrant](/assets/speed-comparison.png)
