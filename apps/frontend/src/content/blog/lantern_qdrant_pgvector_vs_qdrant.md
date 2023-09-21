@@ -1,5 +1,5 @@
 ---
-title: Pgvector and lanterndb/usearch are now nearly as fast and just as accurate as a SVD (Qdrant)
+title: Pgvector and lanterndb/usearch are now nearly as fast and accurate as a SVD (Qdrant)
 author: skeptrune and vidyoot @ arguflow
 pubDatetime: 2023-09-21T10:00:00Z
 postSlug: lantern-vs-pgvector-vs-svd-qdrant
@@ -17,7 +17,7 @@ ogImage: /assets/Arguflow_Opengraph.png
 description: In-depth examination of whether or not lantern and pgvector are able to replace your specialized vector database
 ---
 
-# Pgvector and lanterndb (postgres+usearch) are now nearly as fast and just as accurate as a SVD (Qdrant)
+# Pgvector and lanterndb (postgres+usearch) are now nearly as fast and accurate as a SVD (Qdrant)
 
 ## Star us on Github at [github.com/arguflow/arguflow](https://github.com/arguflow/arguflow)!!!!
 
