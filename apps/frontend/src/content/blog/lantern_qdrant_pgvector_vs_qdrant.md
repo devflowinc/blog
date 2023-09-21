@@ -27,7 +27,7 @@ description: In-depth examination of whether or not lantern and pgvector are abl
 
 Both [pgvector](https://github.com/pgvector/pgvector) and [lanterndb](https://lantern.dev/)(roughly postgresql + [usearch](https://www.unum.cloud/)) are **nearly as fast** as [Qdrant](https://qdrant.tech/) and **can** be **equally precise** after tuning. This means that you should first place your vectors in both [Qdrant](https://qdrant.tech/) and [pgvector](https://github.com/pgvector/pgvector) or [lanterndb](https://lantern.dev/) then tweak your HNSW index params, `m` and `ef_construction`, such that the postgres solution is just as accurate as [Qdrant](https://qdrant.tech/). Following that, move forward with postgres alone.
 
-If you are not already using postgres and do not have requirements for an ACID compliant solution, then we would still recommend [Qdrant](https://qdrant.tech/). It has a lot of convience features, supports quantization, and does not require tuning to be accurate. 
+If you are not already using postgres and do not have requirements for an ACID compliant solution, then we would still recommend [Qdrant](https://qdrant.tech/). It has a lot of convenience features, supports quantization, and does not require tuning to be accurate. 
 
 Check out [this notebook](https://github.com/arguflow/qdrant-svd-vs-lantern-vs-pgvector) to replicate our results. 
 
@@ -51,7 +51,7 @@ Check out [this notebook](https://github.com/arguflow/qdrant-svd-vs-lantern-vs-p
 
 Suppose you are looking for the best possible performance, scalability, and features for vector search. In that case, switching from a Specialized Vector Database (SVD) such as Qdrant is generally not recommended.
 
-However, a [blog post by SingleStore](https://www.singlestore.com/blog/why-your-vector-database-should-not-be-a-vector-database/) answers explains an alternative use-case:
+However, a [blog post by SingleStore](https://www.singlestore.com/blog/why-your-vector-database-should-not-be-a-vector-database/) explains an alternative use-case:
 
 >Vectors and vector search are a data type and query processing approach, not a foundation for a new way of processing data. Using a specialty vector database (SVDB) will lead to the usual problems we see (and solve) again and again with our customers who use multiple specialty systems: redundant data, excessive data movement, lack of agreement on data values among distributed components, extra labor expense for specialized skills, extra licensing costs, limited query language power, programmability and extensibility, limited tool integration, and poor data integrity and availability compared with a true [Database Management Systems] DBMS.
 
