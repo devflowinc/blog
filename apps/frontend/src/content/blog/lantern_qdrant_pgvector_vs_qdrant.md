@@ -1,5 +1,5 @@
 ---
-title: Pgvector and lanterndb/usearch are now nearly as fast and accurate as a SVD (Qdrant)
+title: Pgvector and lanterndb/usearch are now nearly as fast and accurate as a SVDB (Qdrant)
 author: skeptrune and vidyoot @ arguflow
 pubDatetime: 2023-09-21T10:00:00Z
 postSlug: lantern-vs-pgvector-vs-svd-qdrant
@@ -27,7 +27,7 @@ description: In-depth examination of whether or not lantern and pgvector are abl
 
 Both [pgvector](https://github.com/pgvector/pgvector) and [lanterndb](https://lantern.dev/)(roughly postgresql + [usearch](https://www.unum.cloud/)) are **nearly as fast** as [Qdrant](https://qdrant.tech/) and **can** be **equally precise** after tuning. This means that you should first place your vectors in both [Qdrant](https://qdrant.tech/) and [pgvector](https://github.com/pgvector/pgvector) or [lanterndb](https://lantern.dev/) then tweak your HNSW index params, `m` and `ef_construction`, such that the postgres solution is just as accurate as [Qdrant](https://qdrant.tech/). Following that, move forward with postgres alone.
 
-If you are not already using postgres and do not have requirements for an ACID compliant solution, then we would still recommend [Qdrant](https://qdrant.tech/). It has a lot of convenience features, supports quantization, and does not require tuning to be accurate. 
+If you are not already using postgres and do not have requirements for an ACID compliant solution, then we would still recommend [Qdrant](https://qdrant.tech/). It has a lot of convenience features, supports quantization, and does not require tuning to be accurate. Most important, Qdrant is much easier and more reliable to scale horizontally
 
 Check out [this notebook](https://github.com/arguflow/qdrant-svd-vs-lantern-vs-pgvector) to replicate our results. 
 
