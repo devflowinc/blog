@@ -1,5 +1,5 @@
 ---
-title: Pgvector and lanterndb are now just as accurate and fast as a SVD (Qdrant)
+title: Pgvector and lanterndb are now nearly as fast and just as accurate as a SVD (Qdrant)
 author: skeptrune and vidyoot @ arguflow
 pubDatetime: 2023-09-21T10:00:00Z
 postSlug: lantern-vs-pgector-vs-svd-qdrant
@@ -17,7 +17,7 @@ ogImage: /assets/Arguflow_Opengraph.png
 description: In-depth examination of whether or not lantern and pgvector are able to replace your specialized vector database
 ---
 
-# Pgvector and lanterndb are now just as accurate and fast as a SVD (Qdrant)
+# Pgvector and lanterndb are now nearly as fast and just as accurate as a SVD (Qdrant)
 
 ## Star us on Github at [github.com/arguflow/arguflow](https://github.com/arguflow/arguflow)!!!!
 
@@ -25,7 +25,7 @@ description: In-depth examination of whether or not lantern and pgvector are abl
 
 ## Findings
 
-Both [pgvector](https://github.com/pgvector/pgvector) and [lanterndb](https://lantern.dev/) are **equally fast** relative to [Qdrant](https://qdrant.tech/) and **can** be **equally precise** after tuning. This means that you should first place your vectors in both [Qdrant](https://qdrant.tech/) and [pgvector](https://github.com/pgvector/pgvector) or [lanterndb](https://lantern.dev/) then tweak your HNSW index params, `m` and `ef_construction`, such that the postgres solution is just as accurate as [Qdrant](https://qdrant.tech/). Following that, move forward with postgres alone.
+Both [pgvector](https://github.com/pgvector/pgvector) and [lanterndb](https://lantern.dev/) are **nearly as fast** relative to [Qdrant](https://qdrant.tech/) and **can** be **equally precise** after tuning. This means that you should first place your vectors in both [Qdrant](https://qdrant.tech/) and [pgvector](https://github.com/pgvector/pgvector) or [lanterndb](https://lantern.dev/) then tweak your HNSW index params, `m` and `ef_construction`, such that the postgres solution is just as accurate as [Qdrant](https://qdrant.tech/). Following that, move forward with postgres alone.
 
 If you are not already using postgres and do not have requirements for an ACID compliant solution, then we would still recommend [Qdrant](https://qdrant.tech/). It has a lot of convience features, supports quantization, and does not require tuning to be accurate. 
 
