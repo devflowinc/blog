@@ -2,7 +2,7 @@
 title: Pgvector and lanterndb are now nearly as fast and just as accurate as a SVD (Qdrant)
 author: skeptrune and vidyoot @ arguflow
 pubDatetime: 2023-09-21T10:00:00Z
-postSlug: lantern-vs-pgector-vs-svd-qdrant
+postSlug: lantern-vs-pgvector-vs-svd-qdrant
 featured: true
 draft: false
 tags:
