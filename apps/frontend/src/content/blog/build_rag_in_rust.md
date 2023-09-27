@@ -12,14 +12,14 @@ tags:
   - retrieval-augmented-generation
   - rag
 ogImage: /assets/Arguflow_Opengraph.png
-description: We show how to build RAG from the ground up in Rust with as few dependencies as possible. Full implementation details will be linked in every place that it is relevant.
+description: We show you how to build RAG from the ground up in Rust with as few dependencies as possible. Full implementation details will be linked in every place that it is relevant.
 ---
 
 # Build retrieval augmented generation (RAG) from scratch in Rust with Qdrant and OpenAI!
 
 The below tutorial will contain mostly pseudo-code for building RAG in Rust. If you are looking for a full implementation then check out the full code [here](https://github.com/arguflow/arguflow/blob/main/server/src/handlers/message_handler.rs#L72). You can even [self-host it with our guide](https://docs.arguflow.ai/self_hosting). 
 
-In this guide, we are using Qdrant as the vector database. However, you can always replace that your with database of choice, [even postgresql](https://blog.arguflow.ai/posts/lantern-vs-pgvector-vs-svd-qdrant)! If you found this short guide to be helpful then please consider [giving Arguflow a star on Github](https://github.com/arguflow/arguflow).
+In this guide, we are using Qdrant as the vector database. However, you can always replace that your with database of choice, [even postgresql](https://blog.arguflow.ai/posts/lantern-vs-pgvector-vs-svd-qdrant)! If you find this short guide to be helpful then please consider [giving Arguflow a star on Github](https://github.com/arguflow/arguflow).
 
 ![rust github star armed crab](/assets/rust-github-star-armed-crab.jpeg)
 
