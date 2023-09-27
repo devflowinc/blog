@@ -67,9 +67,9 @@ You are going to want to call that function a few times to make sure that you lo
 
 ## Step 2. Generate a search query string to embed and use for retrieval from the user's prompt
 
-Embeddings function that it works best to query with the hallucinated response to a user's prompt rather than the prompt itself. This is because you want to perform vector retrieval using the embedding for the theoretical inference more so than you do the prompt.
+Embeddings function such that it works best to query with the hallucinated response to a user's prompt rather than the prompt itself. This is because you want to perform vector retrieval using the embedding for the theoretical inference more so than you do the prompt.
 
-It is unlikely that relevant information will have an embedding similar to that of a question in example. 
+In example, it is unlikely that relevant information will have an embedding similar to that of a question. 
 
 To that end, you want to take the user's prompt and generate a short inference off it to do vector retrieval with as follows. [Full implementation here](https://github.com/arguflow/arguflow/blob/main/server/src/handlers/message_handler.rs#L365).
 
