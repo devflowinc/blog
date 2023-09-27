@@ -2,12 +2,29 @@
 import { LOGO_IMAGE, SITE } from "@config";
 import Hr from "./Hr.astro";
 import LinkButton from "./LinkButton.astro";
+import socialIcons from "@assets/socialIcons";
 
 export interface Props {
   activeNav?: "posts" | "tags" | "search";
 }
 
 const { activeNav } = Astro.props;
+
+let stars = 0;
+try {
+  const ghStarResponse = await fetch(
+    `https://api.github.com/repos/arguflow/arguflow`,
+    {
+      headers: {
+        Accept: "application/vnd.github+json",
+      },
+    }
+  );
+  const ghStarJson = await ghStarResponse.json();
+  stars = ghStarJson.stargazers_count;
+} catch (e) {
+  console.error(e);
+}
 ---
 
 <header>
@@ -65,12 +82,15 @@ const { activeNav } = Astro.props;
               Tags
             </a>
           </li>
-          <li>
-            <a href="https://chat.arguflow.ai/">Retrieval-augmented chat</a>
-          </li>
-          <li>
-            <a href="https://search.arguflow.ai/">Evidence Search</a>
-          </li>
+          <a
+            href="https://github.com/arguflow/arguflow"
+            class="border-black flex items-center justify-center space-x-2 rounded border px-2 py-1 hover:border-skin-accent hover:text-skin-accent"
+          >
+            <Fragment set:html={socialIcons["Github"]} />
+            <span>STAR US</span>
+            <span>|</span>
+            <span>{stars}</span>
+          </a>
           <li>
             <LinkButton
               href="/search"

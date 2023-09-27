@@ -303,6 +303,6 @@ The current code has a few edits to it, but is essentially the same, you can nav
 
 Good Luck Rustaceans and Happy Hacking!
 
-GITHUB: https://github.com/arguflow/ai-editor
+GITHUB: https://github.com/arguflow/arguflow
 
-Specific File: [Here](https://github.com/arguflow/ai-editor/blob/main/src/handlers/message_handler.rs#L180)
+Specific File: [Here](https://github.com/arguflow/arguflow/blob/main/src/handlers/message_handler.rs#L180)
