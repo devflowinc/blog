@@ -31,7 +31,7 @@ In this guide, we are using Qdrant as the vector database. However, you can alwa
 
 ## Step 1 - Load some data into Qdrant
 
-You are going to want to load some data into Qdrant such that you can retrieve when you go to do generative inference. That will look roughly as follows. The [full implementation is here](https://github.com/arguflow/arguflow/blob/main/server/src/operators/qdrant_operator.rs#L12). 
+You are going to want to load some data into Qdrant such that you can retrieve it when you go to do generative inference. That will look roughly as follows. The [full implementation is here](https://github.com/arguflow/arguflow/blob/main/server/src/operators/qdrant_operator.rs#L12). 
 
 ```rust
 pub async fn create_new_qdrant_point_query(
