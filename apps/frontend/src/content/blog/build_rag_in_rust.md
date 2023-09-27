@@ -21,7 +21,7 @@ The below tutorial will contain mostly pseudo-code for building RAG in Rust. If 
 
 In this guide, we are using Qdrant as the vector database. However, you can always replace that your with database of choice, [even postgresql](https://blog.arguflow.ai/posts/lantern-vs-pgvector-vs-svd-qdrant)! If you found this short guide to be helpful then please consider [giving Arguflow a star on Github](https://github.com/arguflow/arguflow).
 
-![](https://hackmd.io/_uploads/rki-31ZlT.png). 
+![rust github star armed crab](/assets/rust-github-star-armed-crab.jpeg)
 
 
 ## The relevant crates 
@@ -110,33 +110,31 @@ let evidence_search_query = client
     .expect("No OpenAI Completion for evidence search");
 ```
 
-### Step 3. Create a vector embedding from the search query string 
+### Step 3. Create a vector embedding from the search query string using OpenAI
 
 This is a simple API call to the server running your embedding model. In our case, that will be `openai`'s API. 
 
-It looks as follows. [Full implementation here](https://github.com/arguflow/arguflow/blob/main/server/src/operators/card_operator.rs#L48C1-L68C2).
+It looks as follows. [Full implementation here](https://github.com/arguflow/arguflow/blob/main/server/src/operators/card_operator.rs#L80C1-L99C2).
 
 ```rust
-pub async fn create_embedding(
-    message: &str,
-    mutex_store: web::Data<AppMutexStore>,
-) -> Result<Vec<f32>, actix_web::Error> {
-    let use_custom: u8 = std::env::var("USE_CUSTOM_EMBEDDINGS")
-        .unwrap_or("1".to_string())
-        .parse::<u8>()
-        .unwrap_or(1);
+pub async fn create_openai_embedding(message: &str) -> Result<Vec<f32>, actix_web::Error> {
+    let open_ai_api_key = env!("OPENAI_API_KEY", "OPENAI_API_KEY should be set").into();
+    let client = Client::new(open_ai_api_key);
 
-    if use_custom == 0 {
-        let _ = mutex_store
-            .embedding_semaphore
-            .acquire()
-            .await
-            .map_err(|_| ServiceError::BadRequest("Failed to acquire semaphore".to_string()))?;
+    let parameters = EmbeddingParameters {
+        model: "text-embedding-ada-002".to_string(),
+        input: message.to_string(),
+        user: None,
+    };
 
-        create_server_embedding(message).await
-    } else {
-        create_openai_embedding(message).await
-    }
+    let embeddings = client
+        .embeddings()
+        .create(parameters)
+        .await
+        .map_err(actix_web::error::ErrorBadRequest)?;
+
+    let vector = embeddings.data.get(0).unwrap().embedding.clone();
+    Ok(vector.iter().map(|&x| x as f32).collect())
 }
 ```
 
@@ -264,4 +262,4 @@ let stream = client.chat().create_stream(parameters).await.unwrap();
 
 If you found this short guide to be helpful then please consider [giving Arguflow a star on Github](https://github.com/arguflow/arguflow). If you are considering doing all of this with a REST API and streaming responses back to the user then definitely consider [self-hosting Arguflow!](https://docs.arguflow.ai/self_hosting). 
 
-![](https://hackmd.io/_uploads/SJrtzxWlp.png)
+![rust github star crab meme](/assets/rust-github-star-crab.png)
