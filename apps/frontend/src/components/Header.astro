@@ -9,23 +9,27 @@ export interface Props {
 }
 
 const { activeNav } = Astro.props;
-
-let stars = 0;
-try {
-  const ghStarResponse = await fetch(
-    `https://api.github.com/repos/arguflow/arguflow`,
-    {
-      headers: {
-        Accept: "application/vnd.github+json",
-      },
-    }
-  );
-  const ghStarJson = await ghStarResponse.json();
-  stars = ghStarJson.stargazers_count;
-} catch (e) {
-  console.error(e);
-}
 ---
+
+<script>
+  try {
+    const ghStarResponse = await fetch(
+      `https://api.github.com/repos/arguflow/arguflow`,
+      {
+        headers: {
+          Accept: "application/vnd.github+json",
+        },
+      }
+    );
+    const ghStarJson = await ghStarResponse.json();
+    const stars = ghStarJson.stargazers_count;
+    const element = document.querySelector("#star-count");
+    if (!element) throw new Error("Element not found");
+    element.textContent = stars;
+  } catch (e) {
+    console.error(e);
+  }
+</script>
 
 <header>
   <a id="skip-to-content" href="#main-content">Skip to content</a>
@@ -89,7 +93,7 @@ try {
             <Fragment set:html={socialIcons["Github"]} />
             <span>STAR US</span>
             <span>|</span>
-            <span>{stars}</span>
+            <span id="star-count"></span>
           </a>
           <li>
             <LinkButton
