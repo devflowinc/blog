@@ -32,7 +32,7 @@ The demo search and chat experiences are publicly available for you to try out a
 
 [Chat](https://enron-chat.arguflow.ai) is especially fun. You can literally talk to Enron. 
 
-## How can self-host and deploy a mirror yourself 
+## How to self-host and deploy a mirror yourself 
 
 We did not do anything to clean the dataset, so the search results can frequently be very noise. By cleaning the dataset before upload, you could stand up a much higher quality search experience.
 
