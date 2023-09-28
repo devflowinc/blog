@@ -16,7 +16,7 @@ const posts = await getCollection("blog");
 const sortedPosts = getSortedPosts(posts);
 const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
 
-const socialCount = SOCIALS.filter((social) => social.active).length;
+const socialCount = SOCIALS.filter(social => social.active).length;
 ---
 
 <Layout>
@@ -41,16 +41,21 @@ const socialCount = SOCIALS.filter((social) => social.active).length;
       </a>
 
       <p>
-        Arguflow is a tech startup that makes AI infrastructure for business
-        teams. We focus on no-hallucination use-cases with semantic search using <a
-          class="underline"
-          href="https://search.arguflow.ai">Arguflow Search</a
-        > and
-        <a class="underline" href="https://chat.arguflow.ai">Arguflow Chat</a>.
+        Arguflow is an open source tech startup that ships a <b
+          >truly all-in-one solution</b
+        > for retrieval-augmented-generation (RAG) and semantic search.<b
+          >Stand up RAG and vector search for your use-case in hours not days.</b
+        >
       </p>
       <p>
-        <a class="underline" href="https://arguflow.ai/meet">Book a meeting</a> to
-        talk about using our infrastructure for your business case.
+        <b
+          ><a class="underline" href="https://arguflow.ai/meet"
+            >Book a meeting</a
+          ></b
+        > to talk about using our infrastructure for your business case. By working
+        with us directly instead of self-hosting you can get SLAs, support, and access
+        to our proprietary sub-sentence extractive summarization model that will
+        save you dozens of hours when reviewing documents.
       </p>
       {
         // only display if at least one social link is enabled

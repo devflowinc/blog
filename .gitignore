@@ -1,11 +1,9 @@
 # build output
 dist/
-# generated types
-.astro/
+.output/
 
 # dependencies
 node_modules/
-target/
 
 # logs
 npm-debug.log*
@@ -20,3 +18,10 @@ yarn-debug.log*
 
 # macOS-specific files
 .DS_Store
+
+# ignore .astro directory
+.astro
+
+# ignore Jampack cache files
+.jampack/
+.vscode

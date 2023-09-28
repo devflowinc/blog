@@ -1,15 +1,5 @@
 declare module 'astro:content' {
 	interface Render {
-		'.mdx': Promise<{
-			Content: import('astro').MarkdownInstance<{}>['Content'];
-			headings: import('astro').MarkdownHeading[];
-			remarkPluginFrontmatter: Record<string, any>;
-		}>;
-	}
-}
-
-declare module 'astro:content' {
-	interface Render {
 		'.md': Promise<{
 			Content: import('astro').MarkdownInstance<{}>['Content'];
 			headings: import('astro').MarkdownHeading[];
@@ -112,41 +102,62 @@ declare module 'astro:content' {
 
 	const entryMap: {
 		"blog": {
-"first-post.md": {
-  id: "first-post.md",
-  slug: "first-post",
+"build_rag_in_rust.md": {
+  id: "build_rag_in_rust.md",
+  slug: "build_rag_in_rust",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] },
-"markdown-style-guide.md": {
-  id: "markdown-style-guide.md",
-  slug: "markdown-style-guide",
+"enron-email-corpus-semantic-search.md": {
+  id: "enron-email-corpus-semantic-search.md",
+  slug: "enron-email-corpus-semantic-search",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] },
-"second-post.md": {
-  id: "second-post.md",
-  slug: "second-post",
+"lantern_qdrant_pgvector_vs_qdrant.md": {
+  id: "lantern_qdrant_pgvector_vs_qdrant.md",
+  slug: "lantern_qdrant_pgvector_vs_qdrant",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] },
-"third-post.md": {
-  id: "third-post.md",
-  slug: "third-post",
+"open_ai_streaming.md": {
+  id: "open_ai_streaming.md",
+  slug: "open_ai_streaming",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] },
-"using-mdx.mdx": {
-  id: "using-mdx.mdx",
-  slug: "using-mdx",
+"qdrant_vs_clickhouse.md": {
+  id: "qdrant_vs_clickhouse.md",
+  slug: "qdrant_vs_clickhouse",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] },
+} & { render(): Render[".md"] },
+"tailwind-typography.md": {
+  id: "tailwind-typography.md",
+  slug: "tailwind-typography",
+  body: string,
+  collection: "blog",
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] },
+"top_10_collided_cards.md": {
+  id: "top_10_collided_cards.md",
+  slug: "top_10_collided_cards",
+  body: string,
+  collection: "blog",
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] },
+"vault_product_launch.md": {
+  id: "vault_product_launch.md",
+  slug: "vault_product_launch",
+  body: string,
+  collection: "blog",
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] },
 },
 
 	};
