@@ -158,6 +158,13 @@ declare module 'astro:content' {
   collection: "blog",
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] },
+"what_is_arguflow.md": {
+  id: "what_is_arguflow.md",
+  slug: "what_is_arguflow",
+  body: string,
+  collection: "blog",
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] },
 },
 
 	};

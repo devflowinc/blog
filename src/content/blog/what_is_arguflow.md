@@ -37,7 +37,7 @@ Chunking the production dataset into embeddings and serving them via a UI is imm
 
 ### Theme aggregation/recommendations for research
 
-![](https://hackmd.io/_uploads/r1jmfc7lT.png)
+![](/assets/get-related-cards.png)
 
 Once you have found some subset of documents that tie into a given theme, you will likely want to quickly find more which are similar. This is similar to how spotify suggests songs to add to an existing playlist you have created. 
 
@@ -53,7 +53,7 @@ Another use-case here could be validating user reports. You can make an embeddin
 
 ### Generation of FAQs, reports, summaries, or QA bots
 
-![](https://hackmd.io/_uploads/HkeN89mxp.gif)
+![](/assets/generated-debrief.gif)
 
 By performing a retrieval based on a user's prompt and then injecting that into the LLM's context window, you are able to get generations based on your own data. 
 
