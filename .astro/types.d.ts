@@ -109,6 +109,13 @@ declare module 'astro:content' {
   collection: "blog",
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] },
+"chat_with_louis_rossmann.md": {
+  id: "chat_with_louis_rossmann.md",
+  slug: "chat_with_louis_rossmann",
+  body: string,
+  collection: "blog",
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] },
 "enron-email-corpus-semantic-search.md": {
   id: "enron-email-corpus-semantic-search.md",
   slug: "enron-email-corpus-semantic-search",
